@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+ <title>Sentiment Analysis</title>
+ <link rel="stylesheet" href="project.css">
+</head>
+<body>
+<section>
+ 
+    <h1>SENTIMENT ANALYSIS USING SOCIAL MEDIA</h1>
+ <div class="centerDiv">
+  <div class="details">
+   <label>ENTER YOUR USERNAME</label><br>
+   <input type="text" name="" id="nameid">
+  </div>
+
+  <div class="imgdiv">
+   <img src="twitter.jpg" width="200" height="200" class="imgchange">
+  </div>
+
+  <button> SUBMIT </button>
+  
+ </div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+  $('button').click(function(){
+   const name = $('#nameid').val();
+   alert(name);
+   $('.imgchange').attr('src',`${name}`);
+   const b = $('.imgchange');
+   console.log(b);
+
+  });
+ });
+</script>
+
+</body>
+</html>
